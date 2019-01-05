@@ -996,7 +996,7 @@ class FixedDataTable extends React.Component {
 
   _onRef = (div) => {
     this._divRef = div;
-    if (this.props.stopReactWheelPropagation) {
+    if (this._wheelHandler && this.props.stopReactWheelPropagation) {
       this._wheelHandler.setRoot(div);
     }
   }
