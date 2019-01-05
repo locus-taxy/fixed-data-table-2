@@ -609,7 +609,7 @@ var FixedDataTable = createReactClass({
 
   _onRef(div) {
     if (this.props.stopReactWheelPropagation) {
-      this._wheelHandler.setRoot(div);
+      this._wheelHandler && this._wheelHandler.setRoot(div);
     }
   },
 
