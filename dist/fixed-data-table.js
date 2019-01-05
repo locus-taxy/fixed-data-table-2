@@ -3984,7 +3984,7 @@ var FixedDataTable = (0, _createReactClass2.default)({
   },
   _onRef: function _onRef(div) {
     if (this.props.stopReactWheelPropagation) {
-      this._wheelHandler.setRoot(div);
+      this._wheelHandler && this._wheelHandler.setRoot(div);
     }
   },
   render: function render() /*object*/{
